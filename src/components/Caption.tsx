@@ -1,0 +1,2 @@
+import {BRANDING} from '../config/branding';
+export const Caption: React.FC<{text:string}> = ({text}) => <div style={{position:'absolute',left:'10%',right:'10%',bottom:'8%',textAlign:'center'}}><span style={{fontFamily:BRANDING.fonts.body,fontSize:42,fontWeight:700,lineHeight:1.25,color:BRANDING.subtitles.color,background:BRANDING.subtitles.background,padding:'10px 18px',boxDecorationBreak:'clone'}}>{text}</span></div>;

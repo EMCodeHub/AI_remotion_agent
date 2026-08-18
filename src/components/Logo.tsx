@@ -1,0 +1,3 @@
+import {Img, staticFile} from 'remotion';
+import {BRANDING} from '../config/branding';
+export const Logo: React.FC<{src?:string; position?:'top-left'|'top-right'; opacity?:number}> = ({src=BRANDING.logo ?? undefined,position='top-right',opacity=.85}) => src ? <Img src={staticFile(src)} style={{position:'absolute',top:40,[position==='top-right'?'right':'left']:40,width:160,height:80,objectFit:'contain',opacity}}/> : <div style={{position:'absolute',top:40,[position==='top-right'?'right':'left']:40,color:BRANDING.colors.text,fontFamily:BRANDING.fonts.heading,fontWeight:700,opacity}}>{BRANDING.name}</div>;

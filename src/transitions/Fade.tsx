@@ -1,0 +1,2 @@
+import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+export const Fade: React.FC<{children:React.ReactNode; fadeInFrames?:number; fadeOutFrames?:number}> = ({children,fadeInFrames=15,fadeOutFrames=15}) => {const frame=useCurrentFrame();const {durationInFrames}=useVideoConfig();const opacity=interpolate(frame,[0,fadeInFrames,durationInFrames-fadeOutFrames,durationInFrames],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});return <AbsoluteFill style={{opacity}}>{children}</AbsoluteFill>};

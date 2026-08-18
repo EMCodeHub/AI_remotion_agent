@@ -1,0 +1,16 @@
+node_modules/
+exports/final/*
+exports/previews/*
+!exports/final/.gitkeep
+!exports/previews/.gitkeep
+.remotion/
+*.log
+
+# Material original o pesado: nunca publicar por defecto
+/*.mp4
+/*.mov
+/*.mkv
+public/videos/raw/*
+!public/videos/raw/.gitkeep
+public/subtitles/*.full.json
+notes/*transcript*.txt

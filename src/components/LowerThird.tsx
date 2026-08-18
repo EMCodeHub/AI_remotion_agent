@@ -1,0 +1,3 @@
+import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {BRANDING} from '../config/branding';
+export const LowerThird: React.FC<{name:string; role?:string}> = ({name, role}) => {const frame=useCurrentFrame(); const {fps}=useVideoConfig(); const p=spring({frame,fps,config:{damping:18}}); return <div style={{position:'absolute',left:72,bottom:72,transform:`translateX(${(p-1)*500}px)`,background:BRANDING.lowerThird.background,borderLeft:`8px solid ${BRANDING.lowerThird.accent}`,padding:'18px 28px',color:BRANDING.colors.text,fontFamily:BRANDING.fonts.body}}><div style={{fontSize:34,fontWeight:700}}>{name}</div>{role&&<div style={{fontSize:22,opacity:.75,marginTop:5}}>{role}</div>}</div>};
