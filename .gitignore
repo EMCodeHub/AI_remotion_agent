@@ -1,6 +1,7 @@
 node_modules/
 exports/final/*
 exports/previews/*
+exports/project-archives/*
 !exports/final/.gitkeep
 !exports/previews/.gitkeep
 .remotion/
@@ -12,5 +13,17 @@ exports/previews/*
 /*.mkv
 public/videos/raw/*
 !public/videos/raw/.gitkeep
+public/videos/broll/*
+!public/videos/broll/.gitkeep
+public/audio/music/*
+!public/audio/music/.gitkeep
+public/data/*.pdf
 public/subtitles/*.full.json
 notes/*transcript*.txt
+
+# Material local del tutorial Facebook MCP: puede contener datos de cuenta.
+video mcp facebook/
+public/audio/voiceovers/facebook-mcp.mp3
+public/images/facebook-mcp/
+public/videos/broll/facebook-mcp-intro.mp4
+public/subtitles/facebook-mcp.es.json

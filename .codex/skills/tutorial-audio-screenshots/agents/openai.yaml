@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tutorial con audio y capturas"
+  short_description: "Tutoriales Remotion sincronizados con capturas"
+  default_prompt: "Usa $tutorial-audio-screenshots para preparar un tutorial Remotion sincronizado con su narración y sus capturas."

@@ -71,3 +71,7 @@ Los resultados finales aparecen en `exports/final/`; las comprobaciones y fotogr
 > Usa `music.mp3` como música sutil y reduce su volumen mientras habla la persona.
 
 Consulta [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md) para conocer la estructura técnica, las garantías de seguridad y el proceso de verificación.
+
+## Skills locales
+
+- `$tutorial-audio-screenshots`: prepara tutoriales guiados por una locución y una secuencia de capturas. Documenta ingesta segura, transcripción con timestamps, orden semántico, subtítulos, intros silenciosas, transiciones, auditoría UX y verificación del render. Se encuentra en `.codex/skills/tutorial-audio-screenshots/`.

@@ -12,7 +12,9 @@
     "render:vertical": "node scripts/render.mjs SocialVertical exports/final/social-vertical.mp4",
     "render:square": "node scripts/render.mjs SocialSquare exports/final/social-square.mp4",
     "render:test": "node scripts/render.mjs MainVideo exports/previews/test.mp4 --frames=0-29",
-    "render:obsidian-short": "node scripts/render.mjs ObsidianInstagramShort exports/final/video_obsidian_instagram_short.mp4"
+    "render:obsidian-short": "node scripts/render.mjs ObsidianInstagramShort exports/final/video_obsidian_instagram_short.mp4",
+    "render:world-cup-2026": "node scripts/render.mjs WorldCup2026Recap exports/final/world-cup-2026-recap.mp4",
+    "render:facebook-mcp": "node scripts/render.mjs FacebookMcpTutorial exports/final/facebook-mcp-tutorial.mp4"
   },
   "dependencies": {
     "@remotion/captions": "4.0.513",
